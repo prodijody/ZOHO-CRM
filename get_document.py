@@ -5,11 +5,11 @@ def get_file():
     url = 'https://www.zohoapis.in/crm/v2/files'
 
     headers = {
-        'Authorization': 'Zoho-oauthtoken 1000.334a8616f1ee1a3a85f790b99ef112e3.e02ab75b6aaa5869070b2ae9eb84294a'
+        'Authorization': 'Zoho-oauthtoken 1000.bf6d1e66ce448437d058bb87b3e132f5.212333fdbf02f9f1a7b9384423634f8a'
     }
 
     parameters = {
-        'id': '13e85e75a9e2d06a10ea7491733d4bde7293b5843db1baaec02118afb81e96a4'
+        'id': '13e85e75a9e2d06a10ea7491733d4bdee9bc1a805194a387d4a944518f23ba31'
     }
 
     response = requests.get(url=url, headers=headers, params=parameters)

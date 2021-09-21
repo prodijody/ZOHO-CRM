@@ -1,0 +1,4 @@
+1. Get Attachment Id            -           get_attachment_id.py
+2. Download Attachment File     -           download_attachment.py
+3. Upload to ZFS                -           insert_file_into_ZFS.py
+4. Upload to file field         -           insert_document_into_file_upload_field.py
