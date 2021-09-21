@@ -1,19 +1,25 @@
+from config import ACCESS_TOKEN
+
+
 def insert_records():
     import requests
     import json
 
-    url = 'https://www.zohoapis.in/crm/v2/Hospitals'
+    url = 'https://www.zohoapis.in/crm/v2/Queries'
 
     headers = {
-        'Authorization': 'Zoho-oauthtoken 1000.ceb13990b74dab96e35fa26759d45812.edaf760d7294f93b2bdb0e14a833d144',
+        'Authorization': ACCESS_TOKEN,
     }
 
     request_body = dict()
     record_list = list()
 
     record_object_1 = {
-        'Name': 'Zylker',
-        'Email': 'p.daly@zylker.com'
+        'Name1': 'Zylker',
+        'Mobile': '8367272772',
+        'Query': "I have headache",
+        'Status': "New",
+        'partner_name': "Justin Bieber"
     }
 
 
