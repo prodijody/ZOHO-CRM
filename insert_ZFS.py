@@ -23,7 +23,7 @@ def upload_files_to_zfs(paths):
 
     if response is not None:
         ids = []
-        print("HTTP Status Code : " + str(response.status_code))
+        print(f"HTTP Status Code : {response.status_code}")
 
         #print(response.json())
         for obj in response.json()['data']:

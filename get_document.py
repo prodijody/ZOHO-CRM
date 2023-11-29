@@ -15,7 +15,7 @@ def get_file():
     response = requests.get(url=url, headers=headers, params=parameters)
 
     if response is not None:
-        print("HTTP Status Code : " + str(response.status_code))
+        print(f"HTTP Status Code : {response.status_code}")
 
         if 'Content-Disposition' in response.headers:
             file_name = ''
