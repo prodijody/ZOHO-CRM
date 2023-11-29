@@ -21,7 +21,7 @@ def authenticate_crm():
     #response = requests.post(url=url, headers=headers, data=json.dumps(request_body).encode('utf-8'))
     response = requests.post(url=url, headers=headers, data=json.dumps(request_body).encode('utf-8'))
     if response is not None:
-        print("HTTP Status Code : " + str(response.status_code))
+        print(f"HTTP Status Code : {response.status_code}")
         print(response.json())
 
 authenticate_crm()

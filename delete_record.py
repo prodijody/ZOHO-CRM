@@ -14,7 +14,7 @@ def delete_record():
     response = requests.delete(url=url, headers=headers, params=parameters)
 
     if response is not None:
-        print("HTTP Status Code : " + str(response.status_code))
+        print(f"HTTP Status Code : {response.status_code}")
 
         print(response.json())
 

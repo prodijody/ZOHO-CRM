@@ -12,8 +12,6 @@ def insert_records():
     }
 
     request_body = dict()
-    record_list = list()
-
     record_object_1 = {
         'Name1': 'Zylker',
         'Mobile': '8367272772',
@@ -23,9 +21,7 @@ def insert_records():
     }
 
 
-    record_list.append(record_object_1)
-
-
+    record_list = [record_object_1]
     request_body['data'] = record_list
 
     trigger = [
@@ -39,7 +35,7 @@ def insert_records():
     response = requests.post(url=url, headers=headers, data=json.dumps(request_body).encode('utf-8'))
 
     if response is not None:
-        print("HTTP Status Code : " + str(response.status_code))
+        print(f"HTTP Status Code : {response.status_code}")
 
         print(response.json())
 

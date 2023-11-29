@@ -21,7 +21,7 @@ def get_record():
     response = requests.get(url=url, headers=headers)
 
     if response is not None:
-        print("HTTP Status Code : " + str(response.status_code))
+        print(f"HTTP Status Code : {response.status_code}")
 
         print(response.json())
 
